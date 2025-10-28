@@ -1,0 +1,23 @@
+/* ===============================
+   main.css – Komplettpaket
+   =============================== */
+
+/* 1. Basis & Designsystem */
+@import url("layout.css");
+@import url("components.css");
+@import url("utilities.css");
+
+/* 2. Globales System */
+@import url("../design/selections/global-selctiolns.css");
+@import url("icons.css");
+
+/* 3. Theme-Farben */
+@import url("themes/core.css");
+
+/* 4w. Bereichsspezifisch */
+@import url("selections/about.css");
+@import url("selections/message.css");
+@import url("selections/plan.css");
+@import url("selections/socials.css");
+
+

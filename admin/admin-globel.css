@@ -1,0 +1,145 @@
+/* ==========================================
+Gemeinsames Admin-Layout für alle Sektionen
+========================================== */
+
+/* Basis-Layout */
+.admin-section {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+@media (hover: hover) and (pointer: fine) {
+  .admin-section {
+    transition: transform 150ms ease, box-shadow 150ms ease;
+    will-change: transform, box-shadow;
+  }
+  .admin-section:hover {
+    transform: translateY(-4px);
+  }
+  /* Hervorhebung der enthaltenen details (nur visuell, nicht bei offenem Details überschreiben) */
+  .admin-section:hover details:not([open]) {
+    box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  /* optional: wenn geöffnet, etwas stärkere Akzentfarbe */
+  .admin-section:hover details[open] {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  }
+}
+/* Dropdown (Details) - gleiche Farbe wie Wochentage */
+.admin-section details {
+  border: 1px solid var(--border-color); /* Verwendung der Border-Farbe */
+  background: var(--weekday-bg, var(--bg-main));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0;               /* angepasst: padding auf 0, summary regelt den Innenabstand */
+  overflow: hidden;
+}
+/* Zusammenfassung (Überschrift des Dropdowns) */
+.admin-section summary {
+  cursor: pointer;
+  background: var(--bg-main);              /* wie Wochentage-Header */
+  color: var(--color-accent-dark);         /* wie .plan-admin-table th */
+  font-weight: 700;                        /* gleiche Gewichtung wie th */
+  padding: 0.75rem 1rem;                   /* ähnlicher Innenabstand wie th/td */
+  border-radius: 0;                        /* nahtlos zur Card */
+  box-shadow: none;
+  margin: 0;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+/* geschlossener Zustand: gleiche Farbe wie Wochentage (kein zusätzlicher Gradient) */
+.admin-section details:not([open]) summary {
+  background: var(--bg-main);
+}
+/* geöffneter Zustand: gleiche Farbe plus Trennlinie */
+.admin-section details[open] summary {
+  background: var(--bg-main);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+/* Inhalt innerhalb des Dropdowns */
+.admin-section details > *:not(summary) {
+  padding: 1rem 1.5rem;
+}
+
+/* -------------------------------
+
+BUTTONS allgemein
+
+-----------------------------------*/
+button,
+.btn-save,
+.btn-delete,
+.rest-day-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+button:hover {
+  transform: scale(1.03);
+}
+
+
+/* -------------------------------
+
+BUTTONS-save 
+
+-----------------------------------*/
+/* Speichern */
+.btn-save {
+  background: #69c169;
+  color: beige;
+}
+.btn-save:hover {
+  background: #58b158;
+}
+/* Löschen */
+.btn-delete {
+  background: #e74c3c;
+  color: beige;
+}
+.btn-delete:hover {
+  background: #d3392a;
+}
+/* Ruhetag */
+.rest-day-btn {
+  background: #ffb6c1;
+  color: #222;
+}
+.rest-day-btn:hover {
+  background: #ff69b4;
+  color: beige;
+}
+/* Aktionen unter der Tabelle/Textfeld */
+.admin-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* -------------------------------
+
+THEME-DEV
+
+-----------------------------------*/
+.theme-dev {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background: var(--bg-main);
+  border: 1px solid var(--border-color, rgba(0,0,0,0.08));
+  padding: .6rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+.theme-dev select, .theme-dev button, .theme-dev input[type="color"] {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}

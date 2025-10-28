@@ -1,0 +1,26 @@
+:root {
+  --bg-main: #f0f4f8;
+  --weekday-bg: #e3eaf3;
+  --bg-dark: #1e3a5f;
+  --bg-darker: #152b47;
+  
+  --text: #2c405a;
+  --color-accent: #3498db;
+  --color-accent-dark: #2980b9;
+  
+  --border-color: rgb(97, 39, 6);
+  --hover-border-color: rgba(52,152,219,0.3);
+  
+  --radius: 8px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.06);
+  --transition: all 0.2s ease-in-out;
+  
+  /* Deutsche Alias-Namen */
+  --aktion: var(--color-accent);
+  --uhrzeit: var(--text);
+  --wochentag-bg: var(--weekday-bg);
+  --wochentag-schriftart: "Poppins", sans-serif;
+  --wochentage-border: var(--border-color);
+  --wochentag-text: var(--color-accent-dark);
+  }
+   

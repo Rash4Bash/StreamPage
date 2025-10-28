@@ -1,0 +1,8 @@
+/* ============================================
+   Message Section – individuelle Anpassungen
+   ============================================ */
+
+#message { justify-content: center;}
+#message .content-box {background: #ffefe4; max-width: 700px;border-radius: var(--radius);}
+#message h2 { color: var(--color-accent-dark);}
+#message p { font-style: italic;}

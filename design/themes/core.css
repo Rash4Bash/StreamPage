@@ -1,0 +1,28 @@
+:root {
+  /* Grundfarbton beige / sandig */
+   --h: 40;        /* Farbwinkel (0=rot, 120=grün, 240=blau; 40≈beige/gelblich) */
+   --s: 40%;       /* Sättigung: leicht gedämpft für weiche Farben */
+   --l: 90%;       /* Helligkeit: sehr hell für freundlichen Hintergrund */
+  /* Farbvarianten */
+   --bg-main: #e2cfb9;               /* heller Hintergrund */
+   --bg-dark: #272222;               /* leicht dunkler Bereich */
+   --bg-darker: hsl(var(--h), var(--s), calc(var(--l) - 20%)); /* z. B. für Footer */
+  /* Text & Stil */
+   --text: #806868;      /* dunkles Braun für guten Kontrast */
+   --color-accent: #ff69b4;
+   --color-accent-dark: #683636;
+   --border-color: rgba(0,0,0,0.08);
+   --hover-border-color: rgba(255,105,180,0.28);
+   --radius: 8px;
+   --shadow: 0 6px 18px rgba(0,0,0,0.06);
+   --transition: all 0.2s ease-in-out;
+}
+/* Reset & Basis */
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+   font-family: 'Poppins', sans-serif;
+   color: var(--text);
+   background: var(--bg-main);
+   line-height: 1.6;
+   transition: var(--transition);
+}

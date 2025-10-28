@@ -1,0 +1,44 @@
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text, #3a2f2f);
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.icon-text:hover {
+  color: var(--accent, #ff69b4);
+}
+
+.icon-twitch   { background-image: url('../assets/icons/twitch.png'); }
+.icon-x        { background-image: url('../assets/icons/x.png'); }
+.icon-discord  { background-image: url('../assets/icons/discord.png'); }
+.icon-instagram{ background-image: url('../assets/icons/instagram.png'); }
+.icon-tiktok   { background-image: url('../assets/icons/tiktok.png'); }
+.icon-youtube  { background-image: url('../assets/icons/youtube.png'); }
+.icon-facebook { background-image: url('../assets/icons/facebook.png'); }
+.icon-threads  { background-image: url('../assets/icons/threads.png'); }
+.icon-kick     { background-image: url('../assets/icons/kick.png'); }
+.icon-linkedin { background-image: url('../assets/icons/linkedin.png'); }
+.icon-snapchat { background-image: url('../assets/icons/snapchat.png'); }
+.icon-reddit   { background-image: url('../assets/icons/reddit.png'); }
+.icon-patreon  { background-image: url('../assets/icons/patreon.png'); }
+.icon-paypal   { background-image: url('../assets/icons/paypal.png'); }
+
+     .icon-text {
+       display: flex;
+       align-items: center;
+       gap: 8px;
+       text-decoration: none;
+       color: inherit;
+       transition: color 0.25s ease;
+     }

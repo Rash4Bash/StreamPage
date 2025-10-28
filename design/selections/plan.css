@@ -1,0 +1,65 @@
+/* ============================================
+   Streaming-Plan Section – Tabelle & Layout
+   ============================================ */
+
+#streaming-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#streaming-table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  background: var(--bg-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+/* Kopfzeile */
+#header-row {
+  background: var(--bg-main);
+  color: var(--color-accent-dark);
+  font-weight: 700;
+}
+
+#header-row th {
+  padding: 0.75rem;
+  border-bottom: 2px solid rgba(212, 8, 8, 0.15);
+  text-align: center;
+}
+
+/* Tabelleninhalt */
+#streaming-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Letzte Zeile ohne Rand */
+#streaming-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover-Effekt */
+#streaming-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background 0.25s ease;
+}
+
+/* IDs für Wochentage */
+#montag, #dienstag, #mittwoch,
+#donnerstag, #freitag, #samstag, #sonntag {
+  color: var(--text);
+}
+
+/* Responsive Verhalten */
+@media (max-width: 700px) {
+  #streaming-table {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,45 @@
+/* ============================================
+   Socials Section – Grid & Icons
+   ============================================ */
+
+#social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.2rem;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 600px;
+}
+
+.social-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-container a:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
+.social-container .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 0.4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,71 @@
+body {
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     background: #ffe4e1;
+     color: #333;
+     margin: 0;
+     padding: 0;
+ }
+header {
+     background: #ffb6c1;
+     padding: 2em;
+     text-align: center;
+     border-bottom: 3px solid #ff69b4;
+ }
+h1::after {
+     content: " 🐾";
+ }
+section {
+     margin: 3em auto;
+     padding: 2em 2em 2em 2em;
+     max-width: 800px;
+     background: #fffaf0;
+     border-radius: 15px;
+     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+     text-align: left;
+ }
+section p {
+    text-align: left;
+    font-size: 1.08em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+ }
+section h2, section h3 {
+     text-align: left;
+     margin-top: 2.5em;
+     margin-bottom: 1em;
+     color: #333;
+     font-size: 1.4em;
+     font-weight: bold;
+ }
+section ul {
+    padding-left: 2em;
+    margin-bottom: 2em;
+    font-size: 1.08em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+ }
+button {
+     background: #ff69b4;
+     color: white;
+     border: none;
+     padding: 0.5em 1em;
+     border-radius: 8px;
+     cursor: pointer;
+ }
+button:hover {
+     background: #ffb6c1;
+ }
+footer {
+     text-align: center;
+     padding: 1em;
+     background: #ffb6c1;
+     border-top: 3px solid #ff69b4;
+     margin-top: 2em;
+ }
+
+@media (max-width: 900px) {
+    section {
+        padding: 1em;
+        max-width: 98vw;
+    }
+}

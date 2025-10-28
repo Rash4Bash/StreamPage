@@ -1,0 +1,43 @@
+/* ===========================
+   Theme: Beige (Standard)
+   Stil: warm, freundlich, hell
+=========================== */
+
+:root {
+  /* Hintergrundfarben */
+  --hintergrund-haupt: #e2cfb9;
+  --header-bg: #ffb6c1;
+  --footer-bg: #ffb6c1;
+  --footer-text: #683636;
+
+  /* Textfarben */
+  --schrift-standard: #806868;
+  --schrift-akzent: #ff69b4;
+  --schrift-akzent-dunkel: #683636;
+
+  /* Akzentfarben / Aktionen */
+  --farbe-akzent: #ff69b4;
+  --farbe-akzent-dunkel: #683636;
+
+  /* Wochenplan */
+  --wochenplan-hintergrund: #fffaf0;
+  --wochenplan-schriftfarbe: #4b3d3d;
+  --wochenplan-akzent: #ff69b4;
+
+  /* Buttons */
+  --button-speichern: #69c169;
+  --button-speichern-hover: #58b158;
+  --button-löschen: #e74c3c;
+  --button-löschen-hover: #d3392a;
+
+  /* Rahmen, Schatten, Übergänge */
+  --rahmen-farbe: rgba(0,0,0,0.08);
+  --hover-rahmen: rgba(255,105,180,0.28);
+  --rahmen-radius: 8px;
+  --schatten-standard: 0 6px 18px rgba(0,0,0,0.06);
+  --übergang-standard: all 0.3s ease-in-out;
+
+  /* Schriftarten */
+  --schriftart-haupt: "Poppins", sans-serif;
+  --schriftart-titel: "Comic Sans MS", cursive;
+}
